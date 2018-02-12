@@ -1,4 +1,5 @@
 // Grabbing everything from a folder is called 'globbing'
+@import 'nib'
 @import 'styl/*'
 
 add(a, b, c = a)
@@ -9,7 +10,8 @@ pad(a)
 	return a a/2 a*2 a/5
 	
 body
-	background primary
+	// Nib it up
+	background linear-gradient(top, white, black)
 	font 12px
 	color red
 	border solid 1px @color
