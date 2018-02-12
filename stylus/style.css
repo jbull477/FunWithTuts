@@ -17,6 +17,8 @@ body main {
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
+  padding-right: 25px;
+  font: 28px;
   zoom: 1;
 }
 body main:after,

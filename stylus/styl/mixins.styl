@@ -13,6 +13,14 @@ border-radius(radius = 5px)
 	//-webkit-border-radius radius
 	//border-radius radius	
 
+// Conditionals are cool (is object in inventory?, color background)
+test(var)
+	padding-right unit(var, 'px')
+	if var > 10
+		font 28px
+	else
+		font 14px
+
 // Clearfix mixin (for clearing floats and such)
 cf()
 	zoom 1
