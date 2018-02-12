@@ -11,8 +11,12 @@ body main {
   margin-top: 3px;
   padding: 10px 5px 20px 2px;
   border: solid 1px #727272;
-  -webkit-border-radius: 12px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   zoom: 1;
 }
 body main:after,
@@ -24,10 +28,12 @@ body main:after {
   clear: both;
 }
 body p {
-  -webkit-border-radius: 5px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 body li {
-  -webkit-border-radius: 20px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }

@@ -4,10 +4,10 @@
 add(a, b, c = a)
 	a + b + c
 
+// User created function for padding
 pad(a)
 	return a a/2 a*2 a/5
 	
-
 body
 	background primary
 	font 12px
@@ -20,6 +20,7 @@ body
 		margin-top abs(-3px)
 		padding pad(10px)
 		border solid 1px @color
+		transition(all 0.2s ease)
 		border-radius(12px)
 		cf()
 	p
