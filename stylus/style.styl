@@ -1,12 +1,24 @@
 // Grabbing everything from a folder is called 'globbing'
 @import 'styl/*'
 
+add(a, b, c = a)
+	a + b + c
+
+pad(a)
+	return a a/2 a*2 a/5
+	
+
 body
 	background primary
 	font 12px
 	color red
 	border solid 1px @color
+	margin-left add(1px,2)
 	main
+		background rgba(red,0.9)
+		color grayscale(red)
+		margin-top abs(-3px)
+		padding pad(10px)
 		border solid 1px @color
 		border-radius(12px)
 		cf()

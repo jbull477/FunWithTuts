@@ -3,9 +3,14 @@ body {
   font: 12px;
   color: #be2525;
   border: solid 1px #be2525;
+  margin-left: 4px;
 }
 body main {
-  border: solid 1px #be2525;
+  background: rgba(190,37,37,0.9);
+  color: #727272;
+  margin-top: 3px;
+  padding: 10px 5px 20px 2px;
+  border: solid 1px #727272;
   -webkit-border-radius: 12px;
   border-radius: 12px;
   zoom: 1;
