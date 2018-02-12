@@ -1,0 +1,28 @@
+body {
+  background: #475cd1;
+  font: 12px;
+  color: #be2525;
+  border: solid 1px #be2525;
+}
+body main {
+  border: solid 1px #be2525;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  zoom: 1;
+}
+body main:after,
+body main:before {
+  content: "";
+  display: table;
+}
+body main:after {
+  clear: both;
+}
+body p {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+body li {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}

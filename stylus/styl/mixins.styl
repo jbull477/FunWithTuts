@@ -1,0 +1,15 @@
+// This is a mixin (default values, rad!)
+border-radius(radius = 5px)
+	-webkit-border-radius radius
+	border-radius radius
+
+// Clearfix mixin (for clearing floats and such)
+cf()
+	zoom 1
+	// & is the parent selector
+	&:after
+	&:before
+		content ""
+		display table
+	&:after
+		clear both
