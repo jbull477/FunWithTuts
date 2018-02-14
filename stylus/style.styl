@@ -13,7 +13,13 @@ add(a, b, c = a)
 // User created function for padding
 pad(a)
 	return a a/2 a*2 a/5
-	
+
+// Rupture is a breakpoint package
+// Breakpoints are for changing the look on content based on screen size
+// Boils down to media queries ya dingo
+rupture.scale = 0 400px 600px 800px 1050px 1800px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
+
 body
 	// Nib it up
 	background linear-gradient(top, white, black)
@@ -22,6 +28,11 @@ body
 	fixed top 20px right 10%
 	border solid 1px @color
 	margin-left add(1px,2)
+	//  This is the 2nd interval.  Look at the interval chart on the rupture github
+	+above('m')
+		color red
+	+above('xl')
+		color black
 	main
 		background rgba(red,0.9)
 		color grayscale(red)

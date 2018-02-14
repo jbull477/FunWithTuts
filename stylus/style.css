@@ -48,6 +48,16 @@ body {
   border: solid 1px #be2525;
   margin-left: 4px;
 }
+@media only screen and (min-width: 600px) {
+  body {
+    color: #be2525;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  body {
+    color: #000;
+  }
+}
 body main {
   background: rgba(190,37,37,0.9);
   color: #727272;
