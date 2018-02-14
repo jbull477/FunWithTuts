@@ -1,62 +1,65 @@
-// Grabbing everything from a folder is called 'globbing'
-@import 'nib'
-@import 'typographic'
-@import 'styl/*'
-
-// Eric Myer's CSS reset
-normalize-base()
-normalize-html5()
-
-// Nicc font sizes and styles
-$body-font = $futura
-$heading-font = $futura
-$line-height-ratio = $golden
-typographic()
-
-//reset-html5()
-
-add(a, b, c = a)
-	a + b + c
-
-// User created function for padding
-pad(a)
-	return a a/2 a*2 a/5
-
-// Rupture is a breakpoint package
-// Breakpoints are for changing the look on content based on screen size
-// Boils down to media queries ya dingo
-rupture.scale = 0 400px 600px 800px 1050px 1800px
-rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
-
 body
-	// Nib it up
-	background linear-gradient(top, white, black)
-	font 12px
-	color red
-	fixed top 20px right 10%
-	border solid 1px @color
-	margin-left add(1px,2)
-	//  This is the 2nd interval.  Look at the interval chart on the rupture github
-	+above('m')
-		color red
-	+above('xl')
-		color black
-	main
-		background rgba(red,0.9)
-		color grayscale(red)
-		margin-top abs(-3px)
-		padding pad(10px)
-		border @color
-		transition(all 0.2s ease)
-		border-radius(12px)
-		test(25)
-		//cf()
-		clearfix()
-		a
-			overflow ellipsis
-			shadow-stroke(red)
-	p
-		border-radius()
-	li
-		// Transparent mixin, coolio
-		border-radius 20px
+	background blue
+	
+// // Grabbing everything from a folder is called 'globbing'
+// @import 'nib'
+// @import 'typographic'
+// @import 'styl/*'
+
+// // Eric Myer's CSS reset
+// normalize-base()
+// normalize-html5()
+
+// // Nicc font sizes and styles
+// $body-font = $futura
+// $heading-font = $futura
+// $line-height-ratio = $golden
+// typographic()
+
+// //reset-html5()
+
+// add(a, b, c = a)
+// 	a + b + c
+
+// // User created function for padding
+// pad(a)
+// 	return a a/2 a*2 a/5
+
+// // Rupture is a breakpoint package
+// // Breakpoints are for changing the look on content based on screen size
+// // Boils down to media queries ya dingo
+// rupture.scale = 0 400px 600px 800px 1050px 1800px
+// rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
+
+// body
+// 	// Nib it up
+// 	background linear-gradient(top, white, black)
+// 	font 12px
+// 	color red
+// 	fixed top 20px right 10%
+// 	border solid 1px @color
+// 	margin-left add(1px,2)
+// 	//  This is the 2nd interval.  Look at the interval chart on the rupture github
+// 	+above('m')
+// 		color red
+// 	+above('xl')
+// 		color black
+// 	main
+// 		background rgba(red,0.9)
+// 		color grayscale(red)
+// 		margin-top abs(-3px)
+// 		padding pad(10px)
+// 		border @color
+// 		transition(all 0.2s ease)
+// 		border-radius(12px)
+// 		test(25)
+// 		//cf()
+// 		clearfix()
+// 		a
+// 			overflow ellipsis
+// 			shadow-stroke(red)
+// 	p
+// 		border-radius()
+// 	li
+// 		// Transparent mixin, coolio
+// 		border-radius 20px
