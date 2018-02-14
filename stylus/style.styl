@@ -2,6 +2,11 @@
 @import 'nib'
 @import 'styl/*'
 
+// Eric Myer's CSS reset
+normalize-base()
+normalize-html5()
+//reset-html5()
+
 add(a, b, c = a)
 	a + b + c
 
@@ -14,6 +19,7 @@ body
 	background linear-gradient(top, white, black)
 	font 12px
 	color red
+	fixed top 20px right 10%
 	border solid 1px @color
 	margin-left add(1px,2)
 	main
@@ -21,11 +27,15 @@ body
 		color grayscale(red)
 		margin-top abs(-3px)
 		padding pad(10px)
-		border solid 1px @color
+		border @color
 		transition(all 0.2s ease)
 		border-radius(12px)
 		test(25)
-		cf()
+		//cf()
+		clearfix()
+		a
+			overflow ellipsis
+			shadow-stroke(red)
 	p
 		border-radius()
 	li
